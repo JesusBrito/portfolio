@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {Button, Card, CardDeck, Col, Container, Jumbotron, Row} from "react-bootstrap";
 import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import RangeSlider from "react-bootstrap-range-slider";
 
 function App() {
-    const [ value, setValue ] = useState(0);
+    const [value, setValue] = useState(0);
     return (
         <div>
             <header>
@@ -29,7 +29,7 @@ function App() {
                 <section className={'acerca-de'}>
                     <div className={'contenedor'}>
                         <div className={'foto'}>
-                            <img src="img/profile.jpg" width="115" height="115" alt="Profile Jesús Brito"/>
+                            <img src="img/profile.jpg" width="215" height="215" alt="Profile Jesús Brito"/>
                         </div>
 
                         <div className={'texto'}>
@@ -250,7 +250,7 @@ function App() {
                                     </Col>
                                     <Col md={6} className={'no-padding'}>
                                         <RangeSlider
-                                            value='60'  tooltip='off'>
+                                            value='60' tooltip='off'>
                                         </RangeSlider>
                                     </Col>
                                 </Row>
@@ -286,13 +286,14 @@ function App() {
 
                 <CardDeck>
                     <Row>
-                        <Col md={3}>
+                        <Col md={4}>
                             <Card>
                                 <Card.Img variant="top" src="img/people.jpg"/>
                                 <Card.Body>
                                     <Card.Title>Audikiany</Card.Title>
                                     <Card.Text>
-                                        Aplicación móvil desarrollada en Android Studio enfocada a ofrecer experiencias suditivas en la CDMX.
+                                        Aplicación móvil desarrollada en Android Studio enfocada a ofrecer experiencias
+                                        suditivas en la CDMX.
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer>
@@ -300,13 +301,14 @@ function App() {
                                 </Card.Footer>
                             </Card>
                         </Col>
-                        <Col md={3}>
+                        <Col md={4}>
                             <Card>
                                 <Card.Img variant="top" src="img/red-box.png"/>
                                 <Card.Body>
                                     <Card.Title>Redbox</Card.Title>
                                     <Card.Text>
-                                        Aplicación de escritorio desarrollada con la tecnología C# para la consulta y reroducción de auidos en distintas grabadoras.
+                                        Aplicación de escritorio desarrollada con la tecnología C# para la consulta y
+                                        reroducción de auidos en distintas grabadoras.
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer>
@@ -314,13 +316,14 @@ function App() {
                                 </Card.Footer>
                             </Card>
                         </Col>
-                        <Col md={3}>
+                        <Col md={4}>
                             <Card>
                                 <Card.Img variant="top" src="img/ikea.jpg"/>
                                 <Card.Body>
                                     <Card.Title>Sistema de almacén</Card.Title>
                                     <Card.Text>
-                                        Sistema Web enfocado a la administración y control de materiales utilizados dentro del laboratorio del CINVESTAV
+                                        Sistema Web enfocado a la administración y control de materiales utilizados
+                                        dentro del laboratorio del CINVESTAV
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer>
@@ -328,7 +331,24 @@ function App() {
                                 </Card.Footer>
                             </Card>
                         </Col>
-                        <Col md={3}>
+                    </Row>
+                    <Row>
+                        <Col md={4}>
+                            <Card>
+                                <Card.Img variant="top" src="img/coffee.jpg"/>
+                                <Card.Body>
+                                    <Card.Title>Página cafetería</Card.Title>
+                                    <Card.Text>
+                                        Página web desarrollada para la promoción de una pequeña cafetería.
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <small className="text-muted">Mayo 2018</small>
+                                </Card.Footer>
+                            </Card>
+                        </Col>
+
+                        <Col md={4}>
                             <Card>
                                 <Card.Img variant="top" src="img/coffee.jpg"/>
                                 <Card.Body>
@@ -360,16 +380,17 @@ function App() {
 
                 <section className={'redes-sociales'}>
                     <div className={'contenedor'}>
-                        <a className="twitter" href="http://www.twitter.com/falconmasters">
+                        <a className="twitter" href="https://twitter.com/chucho2911">
                             <i className="fa fa-twitter"/></a>
-                        <a className="facebook" href="http://www.facebook.com/falconmasters">
-                            <i className="fa fa-facebook"/></a>
-                        <a className="youtube" href="http://www.youtube.com/falconmasters">
-                            <i className="fa fa-youtube-play"/></a>
-                        <a className="github" href="http://www.github.com/falconmasters">
+                        <a className="whatsapp"
+                           href="https://api.whatsapp.com/send?phone=525533684635&text=%C2%A1Hola!%20Me%20interesa%20tu%20trabajo">
+                            <i className="fa fa-whatsapp"/></a>
+                        <a className="youtube" href="mailto:jesus291196@gmail.com">
+                            <i className="fa fa-envelope"/></a>
+                        <a className="github" href="http://www.github.com/JesusBrito">
                             <i className="fa fa-github"/></a>
-                        <a className="instagram" href="http://www.instagram.com/falconmasters">
-                            <i className="fa fa-instagram"/></a>
+                        <a className="instagram" href="https://www.linkedin.com/in/juanjesusbritobrito/">
+                            <i className="fa fa-linkedin"/></a>
                     </div>
                 </section>
             </footer>
