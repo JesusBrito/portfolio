@@ -34,9 +34,11 @@ function App() {
 
                         <div className={'texto'}>
                             <h3 className={'titulo'}>Acerca de</h3>
-                            <p>This is <span className={'bold'}>Photoshop's version</span> of Lorem Ipsum. Proin gravida
-                                nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis <span className={'bold'}>bibendum auctor</span>,
-                                nisi elit consequat ipsum.</p>
+                            <p>
+                                Desarrollador Full Stack. Innovador, creativo, autodidacta y proactivo, en busca de crecimiento constante.
+                                <br/>
+                                Amo pasar tiempo con mi Familia y seres queridos, soy amante de las nuevas tecnologías y todo lo que engloba este apasionante mundo,  difruto mucho de la literatura de ciencia ficción y científica y me apasiona mucho compartir mi conocimiento con otras personas.
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -114,7 +116,6 @@ function App() {
                                         nivel básico para la recaudación de información. Desarrollo de una solución web
                                         que sirviera de apoyo para la SEDU en la recolección de información de interés
                                         sobre las diferentes escuelas de la CDMX.</p>
-
                                 </div>
                             </Col>
                         </Row>
@@ -283,21 +284,21 @@ function App() {
                 <div className={'texto'}>
                     <h3 className={'titulo'}>Proyectos independientes</h3>
                 </div>
-
                 <CardDeck>
-                    <Row>
+                    <Row className="row_experience">
                         <Col md={4}>
                             <Card>
                                 <Card.Img variant="top" src="img/people.jpg"/>
                                 <Card.Body>
-                                    <Card.Title>Audikiany</Card.Title>
+                                    <Card.Title>Audikyani</Card.Title>
                                     <Card.Text>
                                         Aplicación móvil desarrollada en Android Studio enfocada a ofrecer experiencias
-                                        suditivas en la CDMX.
+                                        auditivas en la CDMX.
                                     </Card.Text>
+                                    <small className="text-muted">Diciembre 2018</small>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <small className="text-muted">Diciembre 2018</small>
+                                    
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -310,9 +311,12 @@ function App() {
                                         Aplicación de escritorio desarrollada con la tecnología C# para la consulta y
                                         reroducción de auidos en distintas grabadoras.
                                     </Card.Text>
+                                    <small className="text-muted">Julio 2019</small>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <small className="text-muted">Julio 2019</small>
+                                    <Button variant="primary" block>
+                                        Ver
+                                    </Button>
                                 </Card.Footer>
                             </Card>
                         </Col>
@@ -325,14 +329,17 @@ function App() {
                                         Sistema Web enfocado a la administración y control de materiales utilizados
                                         dentro del laboratorio del CINVESTAV
                                     </Card.Text>
+                                    <small className="text-muted">Mayo 2019</small>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <small className="text-muted">Mayo 2019</small>
+                                    <Button variant="primary" block>
+                                        Ver
+                                    </Button>
                                 </Card.Footer>
                             </Card>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="row_experience">
                         <Col md={4}>
                             <Card>
                                 <Card.Img variant="top" src="img/coffee.jpg"/>
@@ -341,26 +348,84 @@ function App() {
                                     <Card.Text>
                                         Página web desarrollada para la promoción de una pequeña cafetería.
                                     </Card.Text>
+                                    <small className="text-muted">Mayo 2018</small>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <small className="text-muted">Mayo 2018</small>
+                                    
                                 </Card.Footer>
                             </Card>
                         </Col>
+                        
+                        <Col md={4}>
+                            <Card>
+                                <Card.Img variant="top" src="img/coffee.jpg"/>
+                                <Card.Body>
+                                    <Card.Title>Pagina de promoción para instituto educativo</Card.Title>
+                                    <Card.Text>
+                                        Página web desarrollada para la promoción y .
+                                    </Card.Text>
+                                    <small className="text-muted">Mayo 2018</small>
+                                </Card.Body>
+                                <Card.Footer>
+                                    
+                                </Card.Footer>
+                            </Card>
+                        </Col>
+
 
                         <Col md={4}>
                             <Card>
                                 <Card.Img variant="top" src="img/coffee.jpg"/>
                                 <Card.Body>
-                                    <Card.Title>Página cafetería</Card.Title>
+                                    <Card.Title>Pagina de promoción para instituto educativo</Card.Title>
                                     <Card.Text>
-                                        Página web desarrollada para la promoción de una pequeña cafetería.
+                                        Página web desarrollada para la promoción y .
                                     </Card.Text>
+                                    <small className="text-muted">Mayo 2018</small>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <small className="text-muted">Mayo 2018</small>
+                                    
                                 </Card.Footer>
                             </Card>
+                        </Col>
+                    </Row>
+                    <Row className="row_experience">
+                        <Col md={4}>
+                                <Card>
+                                    <Card.Img variant="top" src="img/people.jpg"/>
+                                    <Card.Body>
+                                        <Card.Title>Audikyani</Card.Title>
+                                        <Card.Text>
+                                            Aplicación móvil desarrollada en Android Studio enfocada a ofrecer experiencias
+                                            auditivas en la CDMX.
+                                        </Card.Text>
+                                        <small className="text-muted">Diciembre 2018</small>
+                                    </Card.Body>
+                                    <Card.Footer>
+                                        <Button variant="primary" block>
+                                            Ver
+                                        </Button>
+                                    </Card.Footer>
+                                </Card>
+                        </Col>
+
+                        <Col md={4}>
+                                <Card>
+                                    <Card.Img variant="top" src="img/people.jpg"/>
+                                    <Card.Body>
+                                        <Card.Title>Audikyani</Card.Title>
+                                        <Card.Text>
+                                            Aplicación móvil desarrollada en Android Studio enfocada a ofrecer experiencias
+                                            auditivas en la CDMX.
+                                        </Card.Text>
+                                        <small className="text-muted">Diciembre 2018</small>
+                                    </Card.Body>
+                                    <Card.Footer>
+                                        <Button variant="primary" block>
+                                            Ver
+                                        </Button>
+                                    </Card.Footer>
+                                </Card>
                         </Col>
                     </Row>
                 </CardDeck>
